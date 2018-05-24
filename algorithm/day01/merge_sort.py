@@ -14,7 +14,7 @@ def merge_sort(list1):
 
 def sort_process(list1, left, right):
     """
-    分治思想，先让左半边和右半边分别有序
+    分治思想，先让左半边和右半边分别有序,再合并
     """
     if left < right:
         mid = (left+right) >> 1
