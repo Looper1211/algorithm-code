@@ -7,9 +7,6 @@
 def binary_search(list1, k):
     """
     折半（二分）查找
-    :param list1:
-    :param k:
-    :return:
     """
     if list1 is None or len(list1) < 1:
         return -1
@@ -29,11 +26,6 @@ def binary_search(list1, k):
 def binary_search2(list1, left, right, k):
     """
     递归版 二分查找
-    :param list1: 
-    :param left: 
-    :param right: 
-    :param k: 
-    :return: 
     """
     # 区间上只有一个数
     if left == right:

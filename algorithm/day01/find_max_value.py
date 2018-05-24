@@ -4,8 +4,6 @@
 def find_max_value(list1):
     """
     找出列表中的最大值
-    :param list1: 
-    :return: 
     """
     if list1 is None or len(list1) < 1:
         return None
@@ -21,10 +19,6 @@ def find_max_value(list1):
 def find_max_value2(list1, left, right):
     """
     递归版 查找列表中的最大值
-    :param list1: 
-    :param left: 
-    :param right: 
-    :return: 
     """
     if left == right:
         return list1[left]

@@ -7,9 +7,6 @@
 def find_sample_values(list1,list2):
     """
     两个有序列表中打印相同值
-    :param list1: 
-    :param list2: 
-    :return: 
     """
     if list1 is None or len(list1) < 1:
         return

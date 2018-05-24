@@ -4,8 +4,6 @@
 def buddle_sort(list1):
     """
     冒泡排序
-    :param list1: 
-    :return: 
     """
     if list1 is None or len(list1) <= 1:
         return
@@ -18,10 +16,6 @@ def buddle_sort(list1):
 def swap(list1, x, y):
     """
     对于列表中指定位置的元素进行交换
-    :param list1:
-    :param x:
-    :param y:
-    :return:
     """
     list1[x], list1[y] = list1[y], list1[x]
 
