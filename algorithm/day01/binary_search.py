@@ -45,7 +45,7 @@ def binary_search2(list1, left, right, k):
         return binary_search2(list1, left, mid - 1, k)
     # 如果中间值 < 目标值，在右半边继续查找
     elif list1[mid] < k:
-        return binary_search2(list1, mid + 1, right, k) 
+        return binary_search2(list1, mid + 1, right, k)
     # 返回值
     else:
         return mid
