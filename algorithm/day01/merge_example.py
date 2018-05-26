@@ -12,22 +12,22 @@
 """
 
 
-def merge_sort(list1):
+def sort(list1):
     """
     借用归并排序思想
     """
     if list1 is None or len(list1) < 2:
         return
-    return sort_process(list1, 0, len(list1)-1)
+    return merge_sort(list1, 0, len(list1)-1)
 
 
-def sort_process(list1, left, right):
+def merge_sort(list1, left, right):
     """
     分治思想，先让左半边和右半边分别有序,再合并
     """
     if left < right:
         mid = (left+right) >> 1
-        return sort_process(list1, left, mid) + sort_process(list1, mid+1, right)+merge(list1, left, mid, right)
+        return merge_sort(list1, left, mid) + merge_sort(list1, mid+1, right)+merge(list1, left, mid, right)
     else:
         return 0
 
@@ -68,10 +68,8 @@ def merge(list1, left, mid, right):
 
 def main():
     list1 = [1, 3, 5, 2, 4, 6]
-    ans = merge_sort(list1)
+    ans = sort(list1)
     print(ans)
-    print(list1)
-
 
 if __name__ == '__main__':
     main()
