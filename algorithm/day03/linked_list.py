@@ -2,7 +2,7 @@
 """
 单链表
 """
-class ListNode():
+class ListNode(object):
     """
     结点，包含结点存储的值 val 和指向下一个结点的引用 next
     """
