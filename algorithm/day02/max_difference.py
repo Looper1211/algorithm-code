@@ -1,4 +1,5 @@
 # coding = utf-8
+import random
 """
 求一个无序列表，排序后相邻元素的差的最大值 时间复杂度O(N)
 """
@@ -49,7 +50,8 @@ def get_bucket_index(num, length, min_num, max_num):
 
 
 def main():
-    list1 = [2,3,16,22,30,45,60,79,98,100]
+    list1 = [random.randint(-100,100) for i in range(30)]
+    print(list1)
     res = max_difference(list1)
     print(res)
 
