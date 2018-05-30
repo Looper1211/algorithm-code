@@ -46,6 +46,13 @@ class Stack(object):
         """
         # return self.length == 0
         return self.top == None
+
+    def get_top(self):
+        """
+        返回栈顶元素的值
+        """
+        if not self.is_empty():
+            return self.top.val
     
 
 # class Stack(object):

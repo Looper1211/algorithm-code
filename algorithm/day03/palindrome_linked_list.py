@@ -78,5 +78,3 @@ class Solution(object):
             slow = slow.next
             head = head.next
         return True
-
-
