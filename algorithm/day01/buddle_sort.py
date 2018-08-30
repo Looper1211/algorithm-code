@@ -7,8 +7,8 @@ def buddle_sort(list1):
     """
     if list1 is None or len(list1) <= 1:
         return
-    for i in range(len(list1) - 1, 0, -1):
-        for j in range(0, i):
+    for end in range(len(list1) - 1, 0, -1):
+        for j in range(0, end):
             if list1[j] > list1[j + 1]:
                 swap(list1, j, j + 1)
 
