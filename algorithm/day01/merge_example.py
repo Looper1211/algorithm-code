@@ -25,11 +25,11 @@ def merge_sort(list1, left, right):
     """
     分治思想，先让左半边和右半边分别有序,再合并
     """
-    if left < right:
-        mid = (left+right) >> 1
-        return merge_sort(list1, left, mid) + merge_sort(list1, mid+1, right)+merge(list1, left, mid, right)
-    else:
+    if left == right:
         return 0
+    mid = (left + right) >> 1
+    return merge_sort(list1, left, mid) + merge_sort(list1, mid + 1, right) + merge(list1, left, mid, right)
+
 
 def merge(list1, left, mid, right):
     """
@@ -41,7 +41,7 @@ def merge(list1, left, mid, right):
     ans = 0
 
     while p1 <= mid and p2 <= right:
-        if list1[p1] <= list1[p2]:
+        if list1[p1] < list1[p2]:
             # 小和问题
             # ans += list1[p1] * (right - p2 + 1)
             temp.append(list1[p1])

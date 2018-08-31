@@ -36,6 +36,7 @@ def sort_color(list1):
         else:
             idx += 1
 
+
 def main():
     list1 = [0, 1, 0, 2, 1, 0, 2, 1, 0, 1, 0]
     sort_color(list1)

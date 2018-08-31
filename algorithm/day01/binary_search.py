@@ -13,7 +13,7 @@ def binary_search(list1, k):
     left = 0
     right = len(list1) - 1
     while left <= right:
-        mid = (left + right) >> 1
+        mid = left + (right - left) >> 1
         if list1[mid] > k:
             right = mid - 1
         elif list1[mid] < k:
