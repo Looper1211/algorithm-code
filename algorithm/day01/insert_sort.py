@@ -19,14 +19,13 @@ def insert_sort(list1):
 def insert_sort2(list1):
     if list1 is None or len(list1) < 2:
         return
-
+    
     for i in range(1, len(list1)):
-        for j in range(i - 1, 0, -1):
+        for j in range(i - 1, -1, -1):
             if list1[j] > list1[j + 1]:
                 swap(list1, j, j + 1)
             else:
                 break
-
 
 def swap(list1, x, y):
     """
@@ -36,9 +35,8 @@ def swap(list1, x, y):
 
 
 def main():
-    list1 = [1, 5, 2, 3, 4]
+    list1 = [5, 2, 3, 4, 1]
     insert_sort2(list1)
-    sorted()
     print(list1)
 
 
