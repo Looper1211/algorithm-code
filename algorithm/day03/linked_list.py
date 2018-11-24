@@ -43,8 +43,9 @@ class LinkedList(object):
                 break
             p = p.next
         if not p.next:
-            return 0
+            return False
         p.next = p.next.next
+        return True
     
 
     def insert_index(self,val,index):
